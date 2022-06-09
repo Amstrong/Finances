@@ -19,6 +19,7 @@
 		BE00C6822851921F00DDF3DC /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00C6812851921F00DDF3DC /* LandmarkRow.swift */; };
 		BE00C6842851934300DDF3DC /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00C6832851934300DDF3DC /* LandmarkList.swift */; };
 		BE00C686285194A500DDF3DC /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00C685285194A500DDF3DC /* LandmarkDetail.swift */; };
+		BE00C68828519FDE00DDF3DC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00C68728519FDE00DDF3DC /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BE00C6812851921F00DDF3DC /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		BE00C6832851934300DDF3DC /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		BE00C685285194A500DDF3DC /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		BE00C68728519FDE00DDF3DC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +90,9 @@
 		BE00C67E285191C300DDF3DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BE00C6722850514C00DDF3DC /* CircleImage.swift */,
-				BE00C6762850521800DDF3DC /* MapView.swift */,
+				BE00C6892851A08000DDF3DC /* Landmarks */,
+				BE00C68A2851A09100DDF3DC /* Helpers */,
 				BE00C6632850491A00DDF3DC /* ContentView.swift */,
-				BE00C6812851921F00DDF3DC /* LandmarkRow.swift */,
-				BE00C6832851934300DDF3DC /* LandmarkList.swift */,
-				BE00C685285194A500DDF3DC /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +112,26 @@
 				BE00C67828518D8400DDF3DC /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE00C6892851A08000DDF3DC /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				BE00C6812851921F00DDF3DC /* LandmarkRow.swift */,
+				BE00C6832851934300DDF3DC /* LandmarkList.swift */,
+				BE00C685285194A500DDF3DC /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		BE00C68A2851A09100DDF3DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE00C6762850521800DDF3DC /* MapView.swift */,
+				BE00C6722850514C00DDF3DC /* CircleImage.swift */,
+				BE00C68728519FDE00DDF3DC /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +208,7 @@
 				BE00C6642850491A00DDF3DC /* ContentView.swift in Sources */,
 				BE00C6772850521800DDF3DC /* MapView.swift in Sources */,
 				BE00C6622850491A00DDF3DC /* FinancesApp.swift in Sources */,
+				BE00C68828519FDE00DDF3DC /* FavoriteButton.swift in Sources */,
 				BE00C6842851934300DDF3DC /* LandmarkList.swift in Sources */,
 				BE00C686285194A500DDF3DC /* LandmarkDetail.swift in Sources */,
 				BE00C6732850514C00DDF3DC /* CircleImage.swift in Sources */,
@@ -321,7 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Finances/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LPPFGDAC;
 				ENABLE_PREVIEWS = YES;
@@ -335,7 +355,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amstrongt.Finances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -350,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Finances/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LPPFGDAC;
 				ENABLE_PREVIEWS = YES;
@@ -364,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amstrongt.Finances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
